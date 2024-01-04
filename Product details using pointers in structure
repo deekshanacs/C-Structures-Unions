@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<string.h>
+struct pd{
+    char name[20];
+    int qnty;
+    float price;
+};
+int main()
+{
+    struct pd pd_,*ptr_pd;
+    ptr_pd = &pd_;
+    printf("Enter name of the product : ");
+    scanf("%s",&ptr_pd->name);
+    printf("Enter quantity of the product : ");
+    scanf("%d",&ptr_pd->qnty);
+    printf("Enter price of the product : ");
+    scanf("%f",&ptr_pd->price);
+    // to display recieved information;
+    printf("PRODUCT NAME : %s\n",ptr_pd->name);
+    printf("PRODUCT QUANTITY : %d\n",ptr_pd->qnty);
+    printf("PRODUCT PRICE : %.2f\n",ptr_pd->price);
+}
