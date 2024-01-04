@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<string.h>
+struct emp{
+    char name[20];
+    char emid[50];
+    int sal;
+};
+int main()
+{   struct emp dt;
+    printf("Enter name of the employee : ");
+    scanf("%s",&dt.name);
+    printf("Employee's Email-id : ");
+    scanf(" %s",&dt.emid);
+    printf("Enter Employees salary : ");
+    scanf("%d",&dt.sal);
+    // to disaply the data recieved;
+    
+    printf("NAME : %s\n",dt.name);
+    printf("EMAIL-ID : %s\n",dt.emid);
+    printf("SALARY : %d",dt.sal);
+}
